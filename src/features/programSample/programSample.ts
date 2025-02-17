@@ -72,6 +72,8 @@ export const is9151DK = (device?: Device) =>
     device?.devkit?.boardVersion === 'PCA10171';
 export const is9131DK = (device?: Device) =>
     device?.devkit?.boardVersion === 'PCA10165';
+export const is9151DK = (device?: Device) =>
+    device?.devkit?.boardVersion === 'PCA10171';
 
 export const programModemFirmware = async (
     device: Device,

@@ -7,7 +7,7 @@
             "fw": [
                 {
                     "type": "Application",
-                    "file": "thingy91_asset_tracker_v2_debug_2023-03-02_8f26142b.hex"
+                    "file": "thingy91_asset_tracker_v2_2024-07-04_20471118.hex"
                 }
             ]
         },
@@ -18,7 +18,7 @@
             "fw": [
                 {
                     "type": "Application",
-                    "file": "thingy91_serial_lte_modem_debug_2023-03-02_8f26142b.hex"
+                    "file": "thingy91_serial_lte_modem_2024-07-04_20471118.hex"
                 }
             ]
         },
@@ -29,12 +29,12 @@
             "fw": [
                 {
                     "type": "Application",
-                    "file": "thingy91_modem_shell_debug_2023-03-02_8f26142b.hex"
+                    "file": "thingy91_asset_tracker_v2_debug_2023-03-02_8f26142b.hex"
                 }
             ]
         }
     ],
-    "dk91": [
+    "dk9160": [
         {
             "title": "Asset Tracker v2",
             "description": "This is the default application on your development kit.",
@@ -42,11 +42,11 @@
             "fw": [
                 {
                     "type": "Modem",
-                    "file": "mfw_nrf9160_1.3.5.zip"
+                    "file": "mfw_nrf9160_1.3.6.zip"
                 },
                 {
                     "type": "Application",
-                    "file": "nrf9160dk_asset_tracker_v2_debug_2023-03-02_8f26142b.hex"
+                    "file": "nrf9160dk_asset_tracker_v2_debug_2024-07-12_5cb85570.hex"
                 }
             ]
         },
@@ -57,11 +57,11 @@
             "fw": [
                 {
                     "type": "Modem",
-                    "file": "mfw_nrf9160_1.3.5.zip"
+                    "file": "mfw_nrf9160_1.3.6.zip"
                 },
                 {
                     "type": "Application",
-                    "file": "slm-with-trace.hex"
+                    "file": "nrf9160dk_serial_lte_modem_debug_2024-07-12_5cb85570.hex"
                 }
             ]
         },
@@ -72,11 +72,105 @@
             "fw": [
                 {
                     "type": "Modem",
-                    "file": "mfw_nrf9160_1.3.5.zip"
+                    "file": "mfw_nrf9160_1.3.6.zip"
                 },
                 {
                     "type": "Application",
-                    "file": "nrf9160dk_modem_shell_with_trace_ncs_v2_3_0_2023_05_04.hex"
+                    "file": "nrf9160dk_modem_shell_debug_2024-07-12_5cb85570.hex"
+                }
+            ]
+        }
+    ],
+    "dk9161": [
+        {
+            "title": "Asset Tracker v2",
+            "description": "This is the default application on your development kit.",
+            "documentation": "https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/applications/asset_tracker_v2/README.html",
+            "fw": [
+                {
+                    "type": "Modem",
+                    "file": "mfw_nrf91x1_2.0.1.zip"
+                },
+                {
+                    "type": "Application",
+                    "file": "nrf9161dk_asset_tracker_v2_2024-07-04_20471118.hex"
+                }
+            ]
+        },
+        {
+            "title": "Serial LTE Modem",
+            "description": "Use this application if you want to evaluate the modem using an external MCU.",
+            "documentation": "https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/applications/serial_lte_modem/README.html",
+            "fw": [
+                {
+                    "type": "Modem",
+                    "file": "mfw_nrf91x1_2.0.1.zip"
+                },
+                {
+                    "type": "Application",
+                    "file": "nrf9161dk_serial_lte_modem_2024-07-04_20471118.hex"
+                }
+            ]
+        },
+        {
+            "title": "Modem Shell",
+            "description": "The Modem Shell (MoSh) sample application enables you to test various device connectivity features, including data throughput.",
+            "documentation": "https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/samples/cellular/modem_shell/README.html",
+            "fw": [
+                {
+                    "type": "Modem",
+                    "file": "mfw_nrf91x1_2.0.1.zip"
+                },
+                {
+                    "type": "Application",
+                    "file": "nrf9161dk_modem_shell_2024-07-04_20471118.hex"
+                }
+            ]
+        }
+    ],
+    "dk9151": [
+        {
+            "title": "Asset Tracker v2",
+            "description": "This is the default application on your development kit.",
+            "documentation": "https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/applications/asset_tracker_v2/README.html",
+            "fw": [
+                {
+                    "type": "Modem",
+                    "file": "mfw_nrf91x1_2.0.1.zip"
+                },
+                {
+                    "type": "Application",
+                    "file": "nrf9151dk_asset_tracker_v2_2024-07-04_20471118.hex"
+                }
+            ]
+        },
+        {
+            "title": "Serial LTE Modem",
+            "description": "Use this application if you want to evaluate the modem using an external MCU.",
+            "documentation": "https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/applications/serial_lte_modem/README.html",
+            "fw": [
+                {
+                    "type": "Modem",
+                    "file": "mfw_nrf91x1_2.0.1.zip"
+                },
+                {
+                    "type": "Application",
+                    "file": "nrf9151dk_serial_lte_modem_2024-07-04_20471118.hex"
+                }
+            ]
+        },
+        {
+            "title": "Modem Shell",
+            "description": "The Modem Shell (MoSh) sample application enables you to test various device connectivity features, including data throughput.",
+            "documentation": "https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/samples/cellular/modem_shell/README.html",
+            "fw": [
+                {
+                    "type": "Modem",
+                    "file": "mfw_nrf91x1_2.0.1.zip"
+                },
+                {
+                    "type": "Application",
+                    "file": "nrf9151dk_modem_shell_2024-07-04_20471118.hex"
                 }
             ]
         }
@@ -93,6 +187,12 @@
             "description": "This is a modem firmware",
             "documentation": "",
             "file": "mfw_nrf9160_1.3.5.zip"
+        },
+        {
+            "title": "Modem Firmware v1.3.6",
+            "description": "This is a modem firmware",
+            "documentation": "",
+            "file": "mfw_nrf9160_1.3.6.zip"
         }
     ]
 }

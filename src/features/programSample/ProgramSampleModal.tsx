@@ -28,7 +28,9 @@ import { resetTraceEvents } from '../tracing/tracePacketEvents';
 import { getIsTracing, resetTraceInfo } from '../tracing/traceSlice';
 import { resetDashboardState } from '../tracingEvents/dashboardSlice';
 import {
+    is9151DK,
     is9160DK,
+    is9161DK,
     isThingy91,
     programDevice,
     programModemFirmware,
@@ -60,7 +62,12 @@ export default () => {
         useState<ModalStage>('programSelection');
     const device = useSelector(selectedDevice);
     const isTracing = useSelector(getIsTracing);
-    const compatible = device && (isThingy91(device) || is9160DK(device));
+    const compatible =
+        device &&
+        (isThingy91(device) ||
+            is9160DK(device) ||
+            is9161DK(device) ||
+            is9151DK(device));
 
     const [samples, setSamples] = useState(initialSamples);
     useEffect(() => {
@@ -78,6 +85,22 @@ export default () => {
     if (!compatible) {
         return null;
     }
+
+    const getRelevantSamples = () => {
+        if (isThingy91(device)) {
+            return samples.thingy91;
+        }
+        if (is9160DK(device)) {
+            return samples.dk9160;
+        }
+        if (is9161DK(device)) {
+            return samples.dk9161;
+        }
+        if (is9151DK(device)) {
+            return samples.dk9151;
+        }
+        return [];
+    };
 
     return (
         <>
@@ -114,9 +137,7 @@ export default () => {
                     <SelectSample
                         setModalStage={setModalStage}
                         selectSample={setSelectedSample}
-                        samples={
-                            isThingy91(device) ? samples.thingy91 : samples.dk91
-                        }
+                        samples={getRelevantSamples()}
                         close={close}
                     />
                 )}
