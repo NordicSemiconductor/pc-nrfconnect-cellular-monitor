@@ -46,7 +46,7 @@
     "devDependencies": {
         "@mdi/js": "^7.2.96",
         "@mdi/react": "^1.6.1",
-        "@nordicsemiconductor/pc-nrfconnect-shared": "^200.0.0",
+        "@nordicsemiconductor/pc-nrfconnect-shared": "^201.0.0",
         "@types/redux-mock-store": "^1.0.2",
         "chart.js": "^4.1.2",
         "check-disk-space": "^2.1.0",
